@@ -1,16 +1,19 @@
 <app-header/>
 <main>
   <div id="dashboard">
-    <div class="dashboard-item">
+    <app-dashboard-item
+      [dashboardItem]="serverStatusItem">
       <app-server-status/>
-    </div>
+    </app-dashboard-item>
 
-    <div class="dashboard-item">
+    <app-dashboard-item
+      [dashboardItem]="trafficItem">
       <app-trafic/>
-    </div>
+    </app-dashboard-item>
 
-    <div class="dashboard-item">
+    <app-dashboard-item
+      [dashboardItem]="ticketsItem">
       <app-tickets/>
-    </div>
+    </app-dashboard-item>
   </div>
 </main>
